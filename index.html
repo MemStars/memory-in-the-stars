@@ -1,38 +1,423 @@
-<section>
-  <!-- Why Choose Memory in the Stars -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Memory in the Stars</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:Arial,Helvetica,sans-serif;
+background:linear-gradient(180deg,#030712,#081225,#111827);
+color:white;
+overflow-x:hidden;
+}
+
+nav{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 8%;
+background:rgba(0,0,0,.45);
+backdrop-filter:blur(12px);
+z-index:1000;
+}
+
+.logo{
+font-size:24px;
+font-weight:bold;
+color:#D4AF37;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:600;
+transition:.3s;
+}
+
+nav a:hover{
+color:#D4AF37;
+}
+
+.hero{
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:140px 20px 80px;
+}
+
+.hero-content{
+max-width:850px;
+}
+
+.hero h1{
+font-size:58px;
+margin-bottom:20px;
+line-height:1.1;
+}
+
+.hero p{
+font-size:22px;
+line-height:1.7;
+opacity:.9;
+margin-bottom:40px;
+}
+
+.button{
+display:inline-block;
+padding:18px 42px;
+background:#D4AF37;
+color:#000;
+border-radius:50px;
+font-weight:bold;
+text-decoration:none;
+transition:.3s;
+}
+
+.button:hover{
+transform:translateY(-3px);
+box-shadow:0 0 20px rgba(212,175,55,.45);
+}
+
+section{
+padding:90px 10%;
+}
+
+.section-title{
+text-align:center;
+font-size:42px;
+margin-bottom:50px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+}
+
+.card{
+background:rgba(255,255,255,.05);
+border:1px solid rgba(255,255,255,.1);
+padding:30px;
+border-radius:20px;
+backdrop-filter:blur(8px);
+}
+
+.card h3{
+margin-bottom:15px;
+color:#D4AF37;
+}
+
+.card p{
+line-height:1.6;
+}
+
+@media(max-width:768px){
+
+nav{
+flex-direction:column;
+gap:15px;
+}
+
+nav ul{
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.hero h1{
+font-size:38px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+.section-title{
+font-size:34px;
+}
+
+}
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">
+✨ Memory in the Stars
+</div>
+
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#why">Why Us</a></li>
+<li><a href="#how">How It Works</a></li>
+<li><a href="#pricing">Pricing</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>
+Every Memory Deserves<br>
+a Place Among the Stars.
+</h1>
+
+<p>
+
+Celebrate birthdays, weddings, memorials, anniversaries, and life's most meaningful moments with a commemorative registration of a real star selected from a public astronomical catalog.
+
+</p>
+
+<a href="register.html" class="button">
+⭐ Register Your Star
+</a>
+
+</div>
+
+</section>
+<section id="why">
+
+<h2 class="section-title">
+Why Choose Memory in the Stars?
+</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>⭐ Real Star Coordinates</h3>
+<p>
+Every registration includes the Right Ascension (RA) and Declination (Dec) of a real star selected from a public astronomical catalog.
+</p>
+</div>
+
+<div class="card">
+<h3>📜 Celestial Legacy Certificate™</h3>
+<p>
+Receive a beautifully designed personalized commemorative certificate created to celebrate life's most meaningful moments.
+</p>
+</div>
+
+<div class="card">
+<h3>🎁 A Meaningful Gift</h3>
+<p>
+Perfect for birthdays, anniversaries, weddings, memorials, graduations, new babies, and pet tributes.
+</p>
+</div>
+
+</div>
+
 </section>
 
-<section>
-<h2 style="text-align:center;font-size:40px;margin-bottom:50px;">
+
+<section id="how">
+
+<h2 class="section-title">
 How It Works
 </h2>
 
 <div class="cards">
 
 <div class="card">
-<h3>1️⃣ Choose a Package</h3>
-<p>Select the commemorative registration package that best fits your occasion.</p>
+<h3>1️⃣ Choose Your Package</h3>
+<p>
+Select the commemorative registration package that best fits your occasion.
+</p>
 </div>
 
 <div class="card">
-<h3>2️⃣ Personalize It</h3>
-<p>Add the recipient's name and your personal dedication to create a meaningful keepsake.</p>
+<h3>2️⃣ Personalize Your Gift</h3>
+<p>
+Add the recipient's name and write a heartfelt dedication that will appear on the certificate.
+</p>
 </div>
 
 <div class="card">
 <h3>3️⃣ Receive Your Certificate</h3>
-<p>We'll provide a personalized commemorative certificate with the coordinates of a real star selected from a public astronomical catalog.</p>
+<p>
+We'll prepare your commemorative certificate with the coordinates of a real star from a public astronomical catalog.
+</p>
 </div>
 
 </div>
+
 </section>
+
+
+<section id="pricing">
+
+<h2 class="section-title">
+Pricing
+</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>🌟 Digital</h3>
+<h2>$29</h2>
+
+<p>
+✔ Personalized Certificate<br>
+✔ Real Star Coordinates<br>
+✔ Registration Number<br>
+✔ PDF Download
+</p>
+
+<br>
+
+<a href="register.html" class="button">
+Choose
+</a>
+
+</div>
+
+<div class="card">
+
+<h3>✨ Premium</h3>
+
+<h2>$59</h2>
+
+<p>
+✔ Everything in Digital<br>
+✔ Premium Certificate Design<br>
+✔ Constellation Information<br>
+✔ Printable Version
+</p>
+
+<br>
+
+<a href="register.html" class="button">
+Choose
+</a>
+
+</div>
+
+<div class="card">
+
+<h3>👑 Legacy</h3>
+
+<h2>$99</h2>
+
+<p>
+✔ Everything in Premium<br>
+✔ Priority Processing<br>
+✔ Luxury Presentation Design<br>
+✔ Future Collector Features
+</p>
+
+<br>
+
+<a href="register.html" class="button">
+Choose
+</a>
+
+</div>
+
+</div>
+
+</section>
+<section id="faq">
+
+<h2 class="section-title">
+Frequently Asked Questions
+</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Do I actually own a star?</h3>
+<p>
+No. This is a commemorative registration that pairs your dedication with the coordinates of a real star from a public astronomical catalog. It does not create legal ownership or an official astronomical name.
+</p>
+</div>
+
+<div class="card">
+<h3>Are the coordinates real?</h3>
+<p>
+Yes. Each registration is linked to a real star listed in a publicly available astronomical catalog and includes its Right Ascension and Declination.
+</p>
+</div>
+
+<div class="card">
+<h3>Is this affiliated with NASA?</h3>
+<p>
+No. Memory in the Stars is an independent commemorative gift service and is not affiliated with NASA or the International Astronomical Union (IAU).
+</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section id="contact">
+
+<h2 class="section-title">
+Contact
+</h2>
+
+<div class="card" style="max-width:700px;margin:auto;text-align:center;">
+
+<h3>Memory in the Stars</h3>
+
+<p>
+Questions or special requests?
+</p>
+
+<p style="margin-top:20px;">
+Email:<br>
+support@memoryinthestars.com
+</p>
+
+</div>
+
+</section>
+
 
 <footer>
 
-Memory in the Stars © 2026
+<p>
+© 2026 Memory in the Stars
+</p>
 
-<br><br>
+<br>
 
-This website provides commemorative star registrations using publicly available astronomical catalog data. We are not affiliated with NASA or the International Astronomical Union (IAU). Star names issued through this service are commemorative and are not official astronomical designations.
+<p>
+
+Memory in the Stars provides commemorative star registrations using publicly available astronomical catalog data. We are not affiliated with NASA, the International Astronomical Union (IAU), or any government space agency. Registrations are commemorative keepsakes and are not official astronomical designations or evidence of ownership.
+
+</p>
 
 </footer>
+
+</body>
+
+</html>
